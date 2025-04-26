@@ -4,6 +4,8 @@
 
 <pre> git clone https://github.com/nika-doroshkevich/Test_task_RetailCRM_API.git </pre>
 
+- Create .env with RETAILCRM_API_URL and RETAILCRM_API_KEY
+
 - Build and Run Containers
 
 <pre> docker-compose up --build -d </pre>
