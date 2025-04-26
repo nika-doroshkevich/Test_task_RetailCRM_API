@@ -4,9 +4,12 @@
 
 <pre> git clone https://github.com/nika-doroshkevich/Test_task_RetailCRM_API.git </pre>
 
-- Create .env with RETAILCRM_API_URL and RETAILCRM_API_KEY
+- Create .env with RETAILCRM_API_URL and RETAILCRM_API_KEY. Example:
 
-- Build and Run Containers
+<pre> RETAILCRM_API_URL=https://your.retailcrm.ru/api/v5 </pre>
+<pre> RETAILCRM_API_KEY=Oooooaaaaaffffkkkkkkkkkk </pre>
+
+- Build and Run Container
 
 <pre> docker-compose up --build -d </pre>
 
@@ -28,11 +31,11 @@
 - funcs -> customers:
   Retrieves a list of customers from RetailCRM using the provided filters.
   Creates a new customer in RetailCRM.
-- funcs -> customers:
+- funcs -> orders:
   Retrieves a list of orders for a specific customer by customer ID.
   Creates a new order in the RetailCRM system.
   Creates a new payment associated with an order in the RetailCRM system.
-- schemas -> customers
-  Pydantic models for customers
-- schemas -> orders
-  Pydantic models for customers
+- schemas -> customers:
+  Pydantic models for customers.
+- schemas -> orders:
+  Pydantic models for customers.
