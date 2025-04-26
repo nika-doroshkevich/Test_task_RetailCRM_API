@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: retailcrm_test
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/retailcrm_test
+    entrypoint: [ "/bin/bash", "entrypoint.sh" ]
